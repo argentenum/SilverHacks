@@ -1,0 +1,43 @@
+(base) arjun@arjun-nabanna:~$ git config --list
+
+
+
+(base) arjun@arjun-nabanna:~$ git config argentenum
+
+
+
+(base) arjun@arjun-nabanna:~$ git config --global user.email "arjunghosh@gmail.com"
+
+
+
+(base) arjun@arjun-nabanna:~$ git config --global user.name "argentenum"
+
+
+
+(base) arjun@arjun-nabanna:~$ cd ~/Documents/github/
+
+
+(base) arjun@arjun-nabanna:~$ git clone https://github.com/argentenum/SilverHacks.git
+
+
+(base) arjun@arjun-nabanna:~$ cd ~/Documents/github/SilverHacks/
+
+
+(base) arjun@arjun-nabanna:~/Documents/github/SilverHacks/$ git status
+
+
+(base) arjun@arjun-nabanna:~/Documents/github/SilverHacks/$ git commit -m "Tibbbles added trial"
+
+
+(base) arjun@arjun-nabanna:~/Documents/github/SilverHacks/$ git add AddTibbles.R 
+
+
+(base) arjun@arjun-nabanna:~/Documents/github/SilverHacks/$ git push
+
+
+
+
+
+
+
+
