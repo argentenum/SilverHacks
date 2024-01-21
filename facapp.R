@@ -3,15 +3,15 @@ install.packages("pdftools")
 install.packages("dplyr")
 
 #Henceforth just run from here on. You may delete the previous lines
-setwd("~/Downloads/facapp/") #set the path to the folder where you have downloaded
+setwd("~/facapp2302/OTHERS/") #set the path to the folder where you have downloaded
 #the applications
-
+#change the date in line 63 to the last date of applications
 library(pdftools)
 library(dplyr)
 
 
 
-file.vector <- list.files(path = "~/Downloads/facapp/")
+file.vector <- list.files(path = "~/facapp2302/OTHERS/")
 pdf.list <- file.vector[grepl(".pdf",file.vector)]
 
 reg.number <- NULL
@@ -60,7 +60,7 @@ dob.pos <- grep("Date of Birth:                                  ", ready4)
 dob <- trimws(gsub("Date of Birth:","",ready4[dob.pos]))
 dob.clean <- gsub("/","",dob)
 better.dob[ton] <- as.Date(dob.clean, format = "%d %b %Y")
-agenow[ton] <- round(((as.numeric(as.Date("2018-12-31")  - better.dob[ton]) )/365.25), digits = 1)
+agenow[ton] <- round(((as.numeric(as.Date("2023-12-31")  - better.dob[ton]) )/365.25), digits = 1)
 categ.pos <- grep("Category:                                      ", ready4)
 categ[ton] <- trimws(gsub("Category:                                      ","",ready4[categ.pos]))
 nation.pos <- grep("Nationality:                                   ", ready4)
