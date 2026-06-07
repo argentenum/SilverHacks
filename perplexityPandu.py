@@ -4,7 +4,7 @@ import csv
 import time
 import requests
 from bs4 import BeautifulSoup
-import google.colab.files
+#import google.colab.files
 
 BASE_URL = "https://www.pandulipipatala.nic.in/advance-search"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -197,7 +197,7 @@ def main():
                 w.writerow(r + [''] * (width - len(r)))
 
         print(f"Saved {len(all_results)} unique rows to {out_csv_filename} (pages {current_chunk_start_page}-{end_page})")
-        google.colab.files.download(out_csv_filename)
+    #    google.colab.files.download(out_csv_filename)
 
     if not seen_keys:
         print("No results extracted overall.")
