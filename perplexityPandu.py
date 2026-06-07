@@ -173,7 +173,7 @@ def main():
                     w.writerow(r + [''] * (width - len(r)))
 
             print(f"Saved {len(all_results)} unique rows to {out_csv_filename} (pages {current_chunk_start_page}-{page})")
-            google.colab.files.download(out_csv_filename)
+          #  google.colab.files.download(out_csv_filename)
 
             all_results = [] # Reset for next chunk
             current_chunk_start_page = page + 1
